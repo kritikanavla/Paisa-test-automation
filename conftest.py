@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from playwright.sync_api import sync_playwright, Browser, BrowserContext, Page
-from config.config import Config
+from config.p_config import Config
 
 
 @pytest.fixture(scope="session")

@@ -20,12 +20,18 @@ with sync_playwright() as p:
     
     # Click Sign In button
     page.get_by_role("button", name="Sign In").last.click()
-    
+    page.wait_for_timeout(500)
+    # Click Flow Tracker
     page.locator("body").click()
-    page.get_by_placeholder("Search ticker...").fill("amazon")
+    page.get_by_text("Flow Tracker").click()
+    page.locator("body").click()
+    page.wait_for_timeout(5000)
+    page.get_by_placeholder("Search ticker...").fill("amzn")
     page.keyboard.press("Enter")
     page.wait_for_timeout(10000)
     page.locator("body").click()
+    page.wait_for_timeout(10000)
+
 
 
 

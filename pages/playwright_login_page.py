@@ -1,7 +1,7 @@
 """Playwright Page Object for Paisa Login."""
 from playwright.sync_api import Page, Locator, expect
 from pages.playwright_base_page import PlaywrightBasePage
-from config.config import Config
+from config.p_config import Config
 
 
 class PlaywrightLoginPage(PlaywrightBasePage):

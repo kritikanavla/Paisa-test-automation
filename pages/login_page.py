@@ -2,7 +2,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from pages.base_page import BasePage
-from config.config import Config
+from config.p_config import Config
 from typing import Optional
 
 
